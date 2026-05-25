@@ -16,107 +16,168 @@
         body {
             background:#f9fafb;
             color:#222;
-            line-height:1.6;
-            padding: 40px;
+            line-height:1.6
         }
         .container {
             max-width:1100px;
             margin:0 auto;
-            display:flex;
-            flex-wrap:wrap;
-            align-items:center;
-            gap:60px
+            padding:20px
         }
-        .text-section {
-            flex:1 1 450px
-        }
-        .image-section {
-            flex:1 1 300px;
-            text-align:center
+        header {
+            text-align:center;
+            padding:40px 20px
         }
         h1 {
             font-size:2.2rem;
             color:#1a4b8c;
-            margin-bottom:20px
+            margin-bottom:15px
         }
-        .intro-text {
+        .sub-title {
             font-size:1.1rem;
-            margin-bottom:25px;
-            color:#333
+            color:#555;
+            max-width:700px;
+            margin:0 auto
         }
-        .feature-list {
-            margin-bottom:30px
+        .card {
+            background:white;
+            border-radius:12px;
+            padding:30px;
+            box-shadow:0 2px 10px rgba(0,0,0,.06);
+            margin:30px 0
         }
-        .feature-list li {
+        .flex-row {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            gap:30px
+        }
+        .col-text {
+            flex:1 1 400px
+        }
+        .col-img {
+            flex:1 1 400px;
+            text-align:center
+        }
+        .col-img img {
+            max-width:100%;
+            border-radius:10px;
+            display:block
+        }
+        h2 {
+            color:#1a4b8c;
+            margin-bottom:15px;
+            font-size:1.6rem
+        }
+        .features {
+            margin:20px 0
+        }
+        .features li {
             list-style:none;
-            margin:15px 0;
-            font-size:1.1rem;
-            padding-left:35px;
-            position:relative
+            padding-left:26px;
+            position:relative;
+            margin:10px 0;
+            font-size:1rem
         }
-        .feature-list li::before {
+        .features li:before {
             content:"✅";
             position:absolute;
-            left:0;
-            top:2px
+            left:0
         }
-        .cta-btn {
+        .cta {
             display:inline-block;
-            background-color:#2563eb;
-            color:#fff;
-            font-size:1.3rem;
-            font-weight:bold;
-            padding:18px 45px;
+            background:#2563eb;
+            color:white;
+            padding:14px 28px;
             border-radius:8px;
+            font-weight:600;
             text-decoration:none;
-            margin:25px 0 15px
+            margin-top:15px
         }
-        .cta-btn:hover {
-            background-color:#1d4ed8
+        .cta:hover {
+            background:#1d4ed8
         }
-        .disclaimer {
-            font-size:0.95rem;
-            color:#666
+        .cta-note {
+            font-size:.9rem;
+            color:#666;
+            margin-top:8px
         }
-        /* 确保图片正常显示 */
-        .image-section img {
-            max-width:100%;
-            border-radius:12px;
-            box-shadow:0 4px 15px rgba(0,0,0,0.1);
-            display:block;
-            margin:0 auto;
+        .legal {
+            margin:20px 0
+        }
+        .legal h3 {
+            color:#1a4b8c;
+            margin-bottom:10px
+        }
+        .legal p {
+            color:#444;
+            margin:8px 0;
+            font-size:.95rem
+        }
+        footer {
+            text-align:center;
+            padding:30px 20px;
+            border-top:1px solid #eee;
+            margin-top:30px;
+            color:#777;
+            font-size:.9rem
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="text-section">
-            <h1>Why Choose Smart Spending (Snoop Finance)?</h1>
+        <header>
+            <h1>Smart Spending UK – Control Your Money Easily</h1>
+            <p class="sub-title">The trusted budgeting app for UK users. Track expenses, cut hidden costs and save money automatically.</p>
+        </header>
 
-            <p class="intro-text">
-                Tired of losing track of your daily spending, unused subscriptions and expensive bills? Thousands of users across the UK rely on Smart Spending to simplify personal finance.
-            </p>
+        <div class="card">
+            <div class="flex-row">
+                <div class="col-text">
+                    <h2>Why Choose Smart Spending (Snoop Finance)?</h2>
+                    <p>Tired of losing track of your spending? Smart Spending helps you manage budgets, find savings, and stop wasting money.</p>
 
-            <ul class="feature-list">
-                <li>Auto sync all your UK bank accounts & payment cards</li>
-                <li>Detect unused subscriptions to cut unnecessary costs</li>
-                <li>Find better deals on bills, insurance and broadband</li>
-                <li>Build simple budgets and monitor cash flow in real time</li>
-                <li>Fully secure and compliant with UK data protection rules</li>
-            </ul>
+                    <ul class="features">
+                        <li>Auto sync all your UK bank accounts & cards</li>
+                        <li>Detect unused subscriptions & cut costs</li>
+                        <li>Find better deals on bills & insurance</li>
+                        <li>Build simple budgets & track cash flow</li>
+                        <li>Secure & compliant with UK data rules</li>
+                    </ul>
 
-            <p class="intro-text">
-                Getting started takes less than 5 minutes. Connect your account today and take full control of your personal finance.
-            </p>
+                    <a href="https://rzekl.com/g/9ifuo3o6bg591433dfd239c473cb39/" class="cta">Download Smart Spending Now</a>
+                    <p class="cta-note">Free to use | For UK users only</p>
+                </div>
 
-            <a href="https://rzekl.com/g/9ifuo3o6bg591433dfd239c473cb39/" class="cta-btn">Download Smart Spending Now</a>
-            <p class="disclaimer">Free to use for basic features | Exclusive for UK users</p>
+                <div class="col-img">
+                    <!-- 只改了这里：换成你最新上传的图片 -->
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/6a480461b01b49de81c20682b84461ff.png" 
+                         alt="Smart Spending App UK" 
+                         loading="lazy">
+                </div>
+            </div>
         </div>
 
-        <div class="image-section">
-            <!-- 这里直接引用你上传的图片 -->
-            <img src="app-preview.jpg" alt="Smart Spending App - UK Budget & Expense Tracker" loading="lazy">
+        <div class="card legal">
+            <h3>About This Site</h3>
+            <p>We recommend personal finance tools for UK users. We may earn a commission when you sign up via our links, at no extra cost to you.</p>
         </div>
+
+        <div class="card legal">
+            <h3>Privacy Policy</h3>
+            <p>This site follows GDPR. We collect anonymous data for analytics and will never sell your information.</p>
+            <p>This website contains affiliate links. We may receive compensation for qualified sign-ups.</p>
+        </div>
+
+        <div class="card legal">
+            <h3>Disclaimer</h3>
+            <p>This site provides information only, not financial advice. Use all tools at your own risk.</p>
+            <p>We are not regulated by the FCA. Please review the official terms before using any app.</p>
+        </div>
+
+        <footer>
+            &copy; 2026 Smart Spending UK. All rights reserved.
+        </footer>
     </div>
 </body>
 </html>
