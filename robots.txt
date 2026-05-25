@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
-Sitemap: https://uk-budget.calcfincepro.com/sitemap.xml
 
 User-agent: Googlebot-Image
 Allow: /
+
+Sitemap: https://uk-budget.calcfincepro.com/sitemap.xml
