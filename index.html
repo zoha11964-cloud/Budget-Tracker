@@ -13,7 +13,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         body {
-            background-color: #f9fafb;
+            background-color: #f8f9fa;
             color: #222;
             line-height: 1.6;
         }
@@ -37,18 +37,16 @@
             max-width: 700px;
             margin: 0 auto;
         }
-        .card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            margin: 30px 0;
-        }
-        .flex-row {
+        .content-row {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             gap: 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin: 30px 0;
         }
         .text-col {
             flex: 1 1 400px;
@@ -61,19 +59,17 @@
             max-width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            /* 优化加载，防止布局塌陷 */
+            height: auto;
+            display: inline-block;
         }
         h2 {
             color: #1a4b8c;
             margin-bottom: 20px;
             font-size: 1.8rem;
         }
-        .intro-text {
-            font-size: 1.1rem;
-            margin-bottom: 25px;
-            color: #333;
-        }
         .feature-list {
-            margin-bottom: 30px;
+            margin: 25px 0;
         }
         .feature-list li {
             list-style: none;
@@ -107,39 +103,106 @@
             color: #666;
             font-size: 0.95rem;
         }
+        .legal-section {
+            background: #fff;
+            padding: 35px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        .legal-section h3 {
+            color: #1a4b8c;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        .legal-section p {
+            margin: 10px 0;
+            color: #444;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+        .footer-links a {
+            color: #2563eb;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .copyright {
+            margin-top: 15px;
+            color: #777;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Smart Spending UK – Control Your Money Easily</h1>
-            <p class="subtitle">The trusted budgeting app for UK users. Track expenses, cut hidden costs and save money automatically.</p>
+            <p class="subtitle">The trusted budgeting app for UK residents. Track expenses, cut hidden costs and grow your savings with just a few taps.</p>
         </header>
 
-        <div class="card">
-            <div class="flex-row">
-                <div class="text-col">
-                    <h2>Why Choose Smart Spending (Snoop Finance)?</h2>
-                    <p class="intro-text">Tired of losing track of your spending? Smart Spending helps you manage budgets, find savings, and stop wasting money.</p>
+        <div class="content-row">
+            <div class="text-col">
+                <h2>Why Choose Smart Spending (Snoop Finance)?</h2>
+                <p>Tired of losing track of your daily spending, unused subscriptions and expensive bills? Thousands of users across the UK rely on Smart Spending to simplify personal finance.</p>
 
-                    <ul class="feature-list">
-                        <li>Auto sync all your UK bank accounts & cards</li>
-                        <li>Detect unused subscriptions & cut costs</li>
-                        <li>Find better deals on bills & insurance</li>
-                        <li>Build simple budgets & track cash flow</li>
-                        <li>Secure & compliant with UK data rules</li>
-                    </ul>
+                <ul class="feature-list">
+                    <li>Auto sync all your UK bank accounts & payment cards</li>
+                    <li>Detect unused subscriptions to cut unnecessary costs</li>
+                    <li>Find better deals on bills, insurance and broadband</li>
+                    <li>Build simple budgets and monitor cash flow in real time</li>
+                    <li>Fully secure and compliant with UK data protection rules</li>
+                </ul>
 
-                    <a href="https://rzekl.com/g/9ifuo3o6bg591433dfd239c473cb39/" class="cta-btn">Download Smart Spending Now</a>
-                    <p class="cta-tip">Free to use | For UK users only</p>
-                </div>
+                <p>Getting started takes less than 5 minutes. Connect your account today and take full control of your personal finance.</p>
 
-                <div class="img-col">
-                    <!-- 这里用你之前正常的图片地址 -->
-                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/6a480461b01b49de81c20682b84461ff.png" alt="Smart Spending App UK">
-                </div>
+                <!-- 你的专属推广链接，用户点击会被Admitad追踪 -->
+                <a href="https://rzekl.com/g/9ifuo3o6bg591433dfd239c473cb39/" class="cta-btn">Download Smart Spending Now</a>
+                <p class="cta-tip">Free to use for basic features | Exclusive for UK users</p>
+            </div>
+
+            <div class="img-col">
+                <!-- 替换为可用图片地址 + 加载容错 -->
+                <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/6a480461b01b49de81c20682b84461ff.png" 
+                     alt="Smart Spending App Interface - UK Budget Tool"
+                     loading="lazy"
+                     onerror="this.style.display='none'">
             </div>
         </div>
+
+        <div class="legal-section">
+            <h3>About This Site</h3>
+            <p>We are dedicated to recommending practical personal finance tools for users living in the United Kingdom. Our mission is to help ordinary people manage money wisely, reduce waste and reach financial goals faster.</p>
+            <p>We provide objective introductions of top-rated budgeting apps. We may earn a small commission when you sign up via our links, and this will not bring any extra cost to you.</p>
+        </div>
+
+        <div class="legal-section">
+            <h3>Privacy Policy</h3>
+            <p><strong>Effective Date:</strong> 25 May 2026</p>
+            <p>This website complies with GDPR. We use cookies for website operation and traffic analytics.</p>
+            <p>We collect anonymous browsing data including IP address, device type and visited pages. We will never sell your personal information to third parties.</p>
+            <p>This page contains affiliate links. If you click and register related services, we may get commission. You have the right to view, modify or delete your data at any time.</p>
+        </div>
+
+        <div class="legal-section">
+            <h3>Disclaimer</h3>
+            <p>This website only provides product information and tool recommendations, and does not act as professional financial advice. All financial tools are used at your own discretion and risk.</p>
+            <p>We are not regulated by the UK Financial Conduct Authority (FCA). Please read the official terms of service before using any third-party applications.</p>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Disclaimer</a>
+            </div>
+            <p class="copyright">&copy; 2026 Smart Spending Guide. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
