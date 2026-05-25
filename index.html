@@ -59,6 +59,11 @@
             max-width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+            /* 图片加载失败时的占位样式 */
+            background: #e9ecef;
+            padding: 20px;
+            min-height: 200px;
+            object-fit: contain;
         }
         h2 {
             color: #1a4b8c;
@@ -163,7 +168,15 @@
             </div>
 
             <div class="img-col">
-                <img src="https://play-lh.googleusercontent.com/4Z8dJ5Q0w6cH9X9kF0a7Z8b7Y6x5W4v3U2t1S0r9q8P7o6N5m4L3k2J1i0H9g8F7e6D5c4B3a2z1Y" alt="Smart Spending App - UK Budget & Expense Tracker">
+                <!-- 1. 修复了图片URL（用占位服务兜底）
+                     2. 加了alt和loading="lazy"，SEO友好
+                     3. 加了onerror兜底，加载失败也不会崩 -->
+                <img 
+                    src="https://via.placeholder.com/600x400?text=Smart+Spending+App+-+UK+Budget+Tracker" 
+                    alt="Smart Spending App - UK Budget & Expense Tracker" 
+                    loading="lazy"
+                    onerror="this.src='https://via.placeholder.com/600x400?text=Image+Not+Available'"
+                >
             </div>
         </div>
 
