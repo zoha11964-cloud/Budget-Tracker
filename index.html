@@ -59,7 +59,7 @@
             max-width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-            /* 优化加载，防止布局塌陷 */
+            /* 防止图片加载时布局塌陷 */
             height: auto;
             display: inline-block;
         }
@@ -161,17 +161,18 @@
 
                 <p>Getting started takes less than 5 minutes. Connect your account today and take full control of your personal finance.</p>
 
-                <!-- 你的专属推广链接，用户点击会被Admitad追踪 -->
                 <a href="https://rzekl.com/g/9ifuo3o6bg591433dfd239c473cb39/" class="cta-btn">Download Smart Spending Now</a>
                 <p class="cta-tip">Free to use for basic features | Exclusive for UK users</p>
             </div>
 
             <div class="img-col">
-                <!-- 替换为可用图片地址 + 加载容错 -->
-                <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/6a480461b01b49de81c20682b84461ff.png" 
-                     alt="Smart Spending App Interface - UK Budget Tool"
-                     loading="lazy"
-                     onerror="this.style.display='none'">
+                <!-- 这里改成了你的本地图片路径，和你上传的文件名完全一致 -->
+                <img 
+                    src="app-preview.jpg" 
+                    alt="Smart Spending App Interface - UK Budget Tool"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                >
             </div>
         </div>
 
